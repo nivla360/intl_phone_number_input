@@ -83,6 +83,7 @@ class _CountrySearchListWidgetState extends State<CountrySearchListWidget> {
           child: ListView.builder(
             controller: widget.scrollController,
             shrinkWrap: true,
+            keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
             itemCount: filteredCountries.length,
             itemBuilder: (BuildContext context, int index) {
               Country country = filteredCountries[index];
