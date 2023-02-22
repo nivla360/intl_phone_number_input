@@ -38,7 +38,7 @@ class Utils {
                 country.name!.toLowerCase().contains(value.toLowerCase()) ||
                 Utils.getCountryName(country, locale)!
                     .toLowerCase()
-                    .contains(value.toLowerCase()) ||
+                    .startsWith(value.toLowerCase()) ||
                 country.dialCode!.contains(value.toLowerCase()),
           )
           .toList();
