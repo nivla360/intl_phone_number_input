@@ -35,7 +35,7 @@ class Utils {
                 country.alpha3Code!
                     .toLowerCase()
                     .startsWith(value.toLowerCase()) ||
-                country.name!.toLowerCase().contains(value.toLowerCase()) ||
+                country.name!.toLowerCase().startsWith(value.toLowerCase()) ||
                 Utils.getCountryName(country, locale)!
                     .toLowerCase()
                     .startsWith(value.toLowerCase()) ||
